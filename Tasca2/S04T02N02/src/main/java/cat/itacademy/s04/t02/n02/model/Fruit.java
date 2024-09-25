@@ -1,4 +1,4 @@
-package cat.itacademy.s04.t02.n01.model;
+package cat.itacademy.s04.t02.n02.model;
 
 import jakarta.persistence.*;
 
@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 public class Fruit {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column
@@ -16,16 +16,6 @@ public class Fruit {
 
     @Column
     private int kgAmount;
-
-    public Fruit() {
-    }
-
-    public Fruit(Long id, String name, int kgAmount) {
-        this.id = id;
-        this.name = name;
-        this.kgAmount = kgAmount;
-    }
-
 
     public Long getId() {
         return id;
@@ -35,17 +25,15 @@ public class Fruit {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getKgAmount() {
         return kgAmount;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setKgAmount(int kgAmount) {
         this.kgAmount = kgAmount;
     }
 }
-
-

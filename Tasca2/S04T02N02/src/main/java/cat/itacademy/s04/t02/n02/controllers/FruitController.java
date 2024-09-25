@@ -1,8 +1,7 @@
-package cat.itacademy.s04.t02.n01.controllers;
+package cat.itacademy.s04.t02.n02.controllers;
 
-
-import cat.itacademy.s04.t02.n01.model.Fruit;
-import cat.itacademy.s04.t02.n01.services.FruitService;
+import cat.itacademy.s04.t02.n02.model.Fruit;
+import cat.itacademy.s04.t02.n02.services.FruitService;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
